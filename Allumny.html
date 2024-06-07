@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .tab-content {
+            margin-top: 20px;
+        }
+        .alumni-card {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .alumni-card:hover {
+            transform: scale(1.05);
+            border-color: #118a1d;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .alumni-card h5 {
+            margin-bottom: 10px;
+        }
+        .alumni-card p {
+            margin-bottom: 5px;
+        }
+        .nav-tabs .nav-link {
+            border: none;
+            border-bottom: 3px solid transparent;
+            color: #118a1d;
+            font-size: 18px;
+        }
+        .nav-tabs .nav-link.active {
+            border-bottom: 3px solid #118a1d;
+            color: #118a1d;
+        }
+        .back-button {
+            background-color: #208825;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            font-size: 18px;
+            color: white;
+        }
+        .back-button:hover {
+            background-color: #ffffff;
+            color: #208825;
+        }
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-brand .back-button {
+            margin-right: 10px;
+        }
+        /* Responsiveness */
+        @media (max-width: 576px) {
+            .nav-tabs .nav-item {
+                flex: 1 1 auto;
+                text-align: center;
+            }
+            .nav-tabs .nav-link {
+                font-size: 0.875rem;
+                padding: 0.5rem 0.75rem;
+            }
+            .alumni-list li {
+                font-size: 0.875rem;
+                padding: 8px;
+            }
+            .back-button {
+                width: 30px;
+                height: 30px;
+                font-size: 16px;
+            }
+        }
+        @media (min-width: 576px) and (max-width: 768px) {
+            .nav-tabs .nav-link {
+                font-size: 1rem;
+                padding: 0.75rem 1rem;
+            }
+            .alumni-list li {
+                font-size: 0.95rem;
+                padding: 9px;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 992px) {
+            .nav-tabs .nav-link {
+                font-size: 1.125rem;
+                padding: 1rem 1.25rem;
+            }
+            .alumni-list li {
+                font-size: 1rem;
+                padding: 10px;
+            }
+        }
+        @media (min-width: 992px) {
+            .nav-tabs .nav-link {
+                font-size: 1.25rem;
+                padding: 1.25rem 1.5rem;
+            }
+            .alumni-list li {
+                font-size: 1.1rem;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#">
+            <div class="back-button" onclick="goBack()">
+                &#8592;
+            </div>
+        </a>
+    </nav>
+    <div class="container mt-5">
+        <h2>Alumni</h2>
+        <ul class="nav nav-tabs" id="alumniTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="year2023-tab" data-toggle="tab" href="#year2023" role="tab" aria-controls="year2023" aria-selected="true">2023</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="year2022-tab" data-toggle="tab" href="#year2022" role="tab" aria-controls="year2022" aria-selected="false">2022</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="year2021-tab" data-toggle="tab" href="#year2021" role="tab" aria-controls="year2021" aria-selected="false">2021</a>
+            </li>
+            <!-- Add more years as needed -->
+        </ul>
+        <div class="tab-content" id="alumniTabsContent">
+            <div class="tab-pane fade show active" id="year2023" role="tabpanel" aria-labelledby="year2023-tab">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="alumni-card">
+                            <h5>Amina Diallo</h5>
+                            <p><strong>Phone:</strong> +237 682604555</p>
+                            <p><strong>Filière:</strong> VPCT</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="alumni-card">
+                            <h5>Kwame Nkrumah</h5>
+                            <p><strong>Phone:</strong> +237 682604555</p>
+                            <p><strong>Filière:</strong> VPCT</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="alumni-card">
+                            <h5>Fatoumata Diarra</h5>
+                            <p><strong>Phone:</strong> +237 682604555</p>
+                            <p><strong>Filière:</strong> VPCT</p>
+                        </div>
+                    </div>
+                    <!-- Add more alumni as needed -->
+                </div>
+            </div>
+            <div class="tab-pane fade" id="year2022" role="tabpanel" aria-labelledby="year2022-tab">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="alumni-card">
+                            <h5>Thabo Mbeki</h5>
+                            <p><strong>Phone:</strong> +237 682604555</p>
+                            <p><strong>Filière:</strong> VPCT</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="alumni-card">
+                            <h5>Kofi Annan</h5>
+                            <p><strong>Phone:</strong> +237 682604555</p>
+                            <p><strong>Filière:</strong> VPCT</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="alumni-card">
+                            <h5>Abena Amoah</h5>
+                            <p><strong>Phone:</strong> +237 682604555</p>
+                            <p><strong>Filière:</strong> VPCT</p>
+                        </div>
+                    </div>
+                    <!-- Add more alumni as needed -->
+                </div>
+            </div>
+            <div class="tab-pane fade" id="year2021" role="tabpanel" aria-labelledby="year2021-tab">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="alumni-card">
+                            <h5>David Black</h5>
+                            <p><strong>Phone:</strong> +237 682604555</p>
+                            <p><strong>Filière:</strong> VPCT</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="alumni-card">
+                            <h5>Femi Adebayo</h5>
+                            <p><strong>Phone:</strong> +237 682604555</p>
+                            <p><strong>Filière:</strong> VPCT</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="alumni-card">
+                            <h5>Nia Kere</h5>
+                            <p><strong>Phone:</strong> +237 682604555</p>
+                            <p><strong>Filière:</strong> VPCT</p>
+                        </div>
+                    </div>
+                    <!-- Add more alumni as needed -->
+                </div>
+            </div>
+            <!-- Add more tab panes as needed -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

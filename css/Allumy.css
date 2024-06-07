@@ -1,0 +1,126 @@
+.tab-content {
+    margin-top: 20px;
+}
+
+.alumni-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.alumni-card:hover {
+    transform: scale(1.05);
+    border-color: #118a1d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.alumni-card h5 {
+    margin-bottom: 10px;
+}
+
+.alumni-card p {
+    margin-bottom: 5px;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: #118a1d;
+    font-size: 18px;
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom: 3px solid #118a1d;
+    color: #118a1d;
+}
+
+.back-button {
+    background-color: #208825;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+}
+
+.back-button:hover {
+    background-color: #ffffff;
+    color: #208825;
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand .back-button {
+    margin-right: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 576px) {
+    .nav-tabs .nav-item {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+    .nav-tabs .nav-link {
+        font-size: 0.875rem;
+        padding: 0.5rem 0.75rem;
+    }
+    .alumni-list li {
+        font-size: 0.875rem;
+        padding: 8px;
+    }
+    .back-button {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .nav-tabs .nav-link {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+    }
+    .alumni-list li {
+        font-size: 0.95rem;
+        padding: 9px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .nav-tabs .nav-link {
+        font-size: 1.125rem;
+        padding: 1rem 1.25rem;
+    }
+    .alumni-list li {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-tabs .nav-link {
+        font-size: 1.25rem;
+        padding: 1.25rem 1.5rem;
+    }
+    .alumni-list li {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+}
