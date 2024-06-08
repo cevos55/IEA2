@@ -4341,7 +4341,7 @@ blockquote cite {
 .breadcrumbs-custom {
 	position: relative;
 	padding: 20px 0;
-	background-color: #516ca9;
+	background-color: #239336;
 	background-position: center;
 }
 
@@ -7294,7 +7294,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-transparent.rd-navbar-static .rd-nav-item:hover .rd-nav-link, .rd-navbar-transparent.rd-navbar-static .rd-nav-item.focus .rd-nav-link, .rd-navbar-transparent.rd-navbar-static .rd-nav-item.active .rd-nav-link, .rd-navbar-transparent.rd-navbar-static .rd-nav-item.opened .rd-nav-link {
-	color: #2A8D28;
+	color: #2f9c2f;
 	border-bottom-color: #2A8D28;
 }
 
@@ -8142,7 +8142,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-search-classic .rd-search-submit:hover {
-	color: #516ca9;
+	color: #239241;
 }
 
 .rd-search.rd-search-inline {
@@ -8171,7 +8171,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-search.rd-search-inline .button-link:hover {
-	color: #516ca9;
+	color: #219c46;
 }
 
 .rd-search.rd-search-inline.form-sm .form-input {
@@ -8266,6 +8266,8 @@ html.rd-navbar-fixed-linked .page {
 	visibility: visible;
 	height: auto;
 	overflow: visible;
+	margin-bottom: 4em;
+	margin-top: 1.5em;
 }
 
 * + .tabs-horizontal.tabs-corporate,

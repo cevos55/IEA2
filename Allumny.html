@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alumni</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/icon.png" >
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
     <style>
         .tab-content {
             margin-top: 20px;
@@ -38,7 +45,7 @@
             border-bottom: 3px solid #118a1d;
             color: #118a1d;
         }
-        .back-button {
+        /* .back-button {
             background-color: #208825;
             border: 1px solid #ddd;
             border-radius: 50%;
@@ -55,8 +62,8 @@
         .back-button:hover {
             background-color: #ffffff;
             color: #208825;
-        }
-        .navbar {
+        } */
+        /* .navbar {
             background-color: #ffffff;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -66,7 +73,7 @@
         }
         .navbar-brand .back-button {
             margin-right: 10px;
-        }
+        } */
         /* Responsiveness */
         @media (max-width: 576px) {
             .nav-tabs .nav-item {
@@ -81,11 +88,11 @@
                 font-size: 0.875rem;
                 padding: 8px;
             }
-            .back-button {
+            /* .back-button {
                 width: 30px;
                 height: 30px;
                 font-size: 16px;
-            }
+            } */
         }
         @media (min-width: 576px) and (max-width: 768px) {
             .nav-tabs .nav-link {
@@ -120,13 +127,91 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-light">
+    <!-- <nav class="navbar navbar-light">
         <a class="navbar-brand" href="#">
             <div class="back-button" onclick="goBack()">
                 &#8592;
             </div>
         </a>
-    </nav>
+    </nav> -->
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="loader">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <p>Chargement...</p>
+      </div>
+    </div>
+    <div class="page">
+        <header class="section page-header rd-navbar-transparent-wrap">
+            <!--RD Navbar-->
+            <div class="rd-navbar-wrap">
+              <nav class="rd-navbar rd-navbar-transparent" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="44px" data-xl-stick-up-offset="44px" data-xxl-stick-up-offset="44px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+                <div class="rd-navbar-aside-outer rd-navbar-collapse">
+                  <div class="rd-navbar-aside">
+                    <div class="rd-navbar-info">
+                      <div class="icon novi-icon mdi mdi-phone"></div><a href="tel:#">+237 243 025 141</a>
+                    </div>
+                    <ul class="list-lined">
+                      <li><a href="#">S'inscrire</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="rd-navbar-main-outer">
+                  <div class="rd-navbar-main-inner">
+                    <div class="rd-navbar-main">
+                      <!--RD Navbar Panel-->
+                      <div class="rd-navbar-panel">
+                        <!--RD Navbar Toggle-->
+                        <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                        <!--RD Navbar Brand-->
+                        <div class="rd-navbar-brand">
+                          <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo_IEA.png" alt="" width="146" height="22"/><img class="brand-logo-light" src="images/logo_IEA.png" alt="" style="width: 5em; height: 5em; "/></a>
+                        </div>
+                      </div>
+                      <div class="rd-navbar-main-element">
+                        <div class="rd-navbar-nav-wrap">
+                          <ul class="rd-navbar-nav">
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Accueil</a>
+                            </li>
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">A Propros</a>
+                            </li>
+                            <li class="rd-nav-item "><a class="rd-nav-link" href="typography.html">Formations</a>
+                            </li>
+                            <li class="rd-nav-item active"><a class="rd-nav-link" href="Allumny.html">Alumni</a>
+                            </li>
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="rd-navbar-bg novi-background bg-image" style="background-image: url(images/Entete.jpg); height: 110px;"></div>
+          </header>
+           <!-- Breadcrumbs-->
+      <section class="breadcrumbs-custom bg-image novi-background ">
+        <div class="container">
+          <ul class="breadcrumbs-custom-path">
+            <li><a href="index.html">Accueil</a></li>
+            <li class="active">Alumni</li>
+          </ul>
+        </div>
+      </section>
+          
     <div class="container mt-5">
         <h2>Alumni</h2>
         <ul class="nav nav-tabs" id="alumniTabs" role="tablist">
@@ -165,6 +250,27 @@
                             <p><strong>Filière:</strong> VPCT</p>
                         </div>
                     </div>
+                    <div class="col-md-4">
+                      <div class="alumni-card">
+                          <h5>Sieve Antoine</h5>
+                          <p><strong>Phone:</strong> +237 682604555</p>
+                          <p><strong>Filière:</strong> VPCT</p>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="alumni-card">
+                        <h5>Ntamack Josua</h5>
+                        <p><strong>Phone:</strong> +237 682604555</p>
+                        <p><strong>Filière:</strong> VPCT</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="alumni-card">
+                      <h5>Patrick André</h5>
+                      <p><strong>Phone:</strong> +237 682604555</p>
+                      <p><strong>Filière:</strong> VPCT</p>
+                  </div>
+              </div>
                     <!-- Add more alumni as needed -->
                 </div>
             </div>
@@ -227,10 +333,88 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
+    <!-- <script>
         function goBack() {
             window.history.back();
         }
-    </script>
+    </script> -->
+    <footer class="section footer-classic">
+        <div class="footer-inner-1">
+          <div class="container">
+            <div class="row row-40">
+              <div class="col-md-5 col-lg-3">
+                <h5>Contacts</h5>
+                <ul class="contact-list font-weight-bold">
+                  <li>
+                    <div class="unit unit-spacing-xs">
+                      <div class="unit-left">
+                        <div class="icon icon-sm icon-primary novi-icon mdi mdi-map-marker"></div>
+                      </div>
+                      <div class="unit-body"><a href="#">Université des Montagnes <br>Bangangté, Cameroun</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-spacing-xs">
+                      <div class="unit-left">
+                        <div class="icon icon-sm icon-primary novi-icon mdi mdi-phone"></div>
+                      </div>
+                      <div class="unit-body"><a href="tel:#">+237 243 025 141</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-spacing-xs">
+                      <div class="unit-left">
+                        <div class="icon icon-sm icon-primary novi-icon mdi mdi-clock"></div>
+                      </div>
+                      <div class="unit-body">
+                        <ul class="list-0">
+                          <li>Lun à Vend: 8:00–17:00</li>
+                          <li>Weekends: Fermé</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul><a class="d-inline-block big" href="mailto:#">info@udem.cm</a>
+              </div>
+              <div class="col-md-6 col-lg-5">
+                <h5>Liens</h5>
+                <div class="row row-5 justify-content-between">
+                  <div class="col-sm-6">
+                    <ul class="footer-list big">
+                      <li><a href="#"> www.udm.aed-cm.org</a></li>
+                      <li><a href="#">Site web ISST</a></li>
+                      <li><a href="#">Site web FSS</a></li>
+                      <li><a href="#">Site Web CUM</a></li>
+                     
+                    </ul>
+                  </div>
+                  <!-- <div class="col-sm-4 col-lg-6 col-xxl-5">
+                    <ul class="footer-list big">
+                      <li><a href="#">Autre lien</a></li>
+                      <li><a href="#">Autre lien</a></li>
+                      <li><a href="#">Autre lien</a></li>
+                      <li><a href="#">Autre lien</a></li>
+                     
+                    </ul>
+                  </div> -->
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-4">
+                <h5>Partnaires</h5>
+                <div class="row row-30 align-items-center text-center">
+                  <div class="col-6 col-md-4 col-lg-6"><a class="link-image" href="#"><img src="images/partener2.png" alt="" width="121" height="34"/></a></div>
+                  <div class="col-6 col-md-4 col-lg-6"><a class="link-image" href="#"><img src="images/yaba-in.png" alt="" width="121" height="16"/></a></div>
+                  <div class="col-6 col-md-4 col-lg-6"><a class="link-image" href="#"><img src="images/CUM.png" alt="" width="101" height="38"/></a></div>
+                  <div class="col-6 col-md-4 col-lg-6"><a class="link-image" href="#"><img src="images/partener1.png" alt="" width="107" height="26"/></a></div>
+                  <div class="col-6 col-md-4 col-lg-6"><a class="link-image" href="#"><img src="images/partener3.png" alt="" width="97" height="26"/></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer> 
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
