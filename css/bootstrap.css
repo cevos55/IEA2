@@ -2172,6 +2172,7 @@ textarea.form-control {
 
 .btn:not(:disabled):not(.disabled) {
 	cursor: pointer;
+	
 }
 
 a.btn.disabled,
@@ -3895,6 +3896,7 @@ input[type="button"].btn-block {
 	border-bottom: 0;
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
+	margin-top: 2em;
 }
 
 .accordion .card:last-of-type {

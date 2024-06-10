@@ -56,6 +56,70 @@
  *     5.19 RD Twitterfeed
  *     5.20 Countdown
  */
+
+ #programme-de-cours .accordion-button:not(.collapsed) {
+	color: #fff;
+	background-color: #535353;
+	text-decoration: none;
+
+  }
+  /* .accordion-button:hover{
+	  color: #fff;
+	  background-color: #565956;
+  } */
+  .course-card {
+	  border: 1px solid #ddd;
+	  border-radius: 10px;
+	  transition: transform 0.3s, box-shadow 0.3s;
+	  margin-bottom: 20px;
+  }
+  .course-card:hover {
+	  transform: scale(1.05);
+	  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .course-card .card-header {
+	  background-color: #118a1d;
+	  color: #fff;
+	  font-size: 1.25rem;
+  }
+  .credits {
+	  font-weight: bold;
+	  color: #118a1d;
+  }
+  @media (max-width: 576px) {
+	  .course-card .card-header {
+		  font-size: 1rem;
+	  }
+	  .credits {
+		  font-size: 0.9rem;
+	  }
+  }
+  @media (min-width: 576px) and (max-width: 768px) {
+	  .course-card .card-header {
+		  font-size: 1.1rem;
+	  }
+	  .credits {
+		  font-size: 1rem;
+	  }
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+	  .course-card .card-header {
+		  font-size: 1.2rem;
+	  }
+	  .credits {
+		  font-size: 1.1rem;
+	  }
+  }
+  @media (min-width: 992px) {
+	  .course-card .card-header {
+		  font-size: 1.25rem;
+	  }
+	  .credits {
+		  font-size: 1.1rem;
+	  }
+  }
+
+
 /** @section Reset Styles*/
 .partenaires {
     padding: 60px;
